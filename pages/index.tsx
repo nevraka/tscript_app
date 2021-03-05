@@ -4,7 +4,7 @@ const IndexPage = () => {
   return (
     <>
       <Header />
-      <div className="flex  p-24 justify-center ">
+      <div className="flex  p-24 justify-center">
         <img
           className="h-24 w-24 rounded-full mx-0 mr-5"
           src="https://bit.ly/37LLS6l"
