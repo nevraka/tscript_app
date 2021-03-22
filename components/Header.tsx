@@ -1,79 +1,16 @@
-import { faAngleDown, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Products from './Products';
 
 const Header = () => {
   return (
     <div className="flex sm:ml-6 pt-10">
-      <div className="py-1 block self-center">
-        <div className=" inline-flex font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-          <button
-            id="options-menu"
-            aria-haspopup="true"
-            aria-expanded="true"
-            className="pl-5 pr-5 flex"
-            role="menu"
-          >
-            Bardaklar
-            <FontAwesomeIcon
-              style={{ alignSelf: 'center', margin: '5px' }}
-              icon={faAngleDown}
-            />
-          </button>
-        </div>
-        <div className="inline-flex font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-          <button
-            id="options-menu"
-            aria-haspopup="true"
-            aria-expanded="true"
-            className="pl-5 pr-5 flex"
-            type="button"
-            role="menu"
-          >
-            Tabaklar
-            <FontAwesomeIcon
-              icon={faAngleDown}
-              style={{ alignSelf: 'center', margin: '5px' }}
-            />
-          </button>
-        </div>
-        <div className="inline-flex font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-          <button
-            id="options-menu"
-            aria-haspopup="true"
-            aria-expanded="true"
-            className="pl-5 pr-5 flex"
-            type="button"
-            role="menu"
-          >
-            Mumluklar
-            <FontAwesomeIcon
-              icon={faAngleDown}
-              style={{ alignSelf: 'center', margin: '5px' }}
-            />
-          </button>
-        </div>
-        <div className="inline-flex font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-          <button
-            id="options-menu"
-            aria-haspopup="true"
-            aria-expanded="true"
-            className="pl-5 pr-5 flex"
-            type="button"
-            role="menu"
-          >
-            Vazolar
-            <FontAwesomeIcon
-              icon={faAngleDown}
-              style={{ alignSelf: 'center', margin: '5px' }}
-            />
-          </button>
-        </div>
-      </div>
       <img
-        className="h-full content-center block h-20 w-24 h-auto w-100px "
+        className="h-full content-center block h-20 w-32 h-auto w-100px mr-auto "
         src="https://cdn.shopier.net/fetch.php?p=logo_468/yakaart12_alt5.jpg"
         alt="avatar"
       ></img>
+      <Products />
       <div className="dropdown table relative mx-8 self-center ml-auto">
         <button className="block self-center">
           <FontAwesomeIcon style={{ marginRight: '20px' }} icon={faSearch} />
